@@ -1,10 +1,10 @@
-package com.arcadia.samples.springsakilacrud;
+package com.arcadia.samples.sakila;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringSakilaCrudApplicationTests {
+class AppTests {
 
 	@Test
 	void contextLoads() {

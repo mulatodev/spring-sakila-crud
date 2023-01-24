@@ -1,1 +1,6 @@
-com/arcadia/samples/springsakilacrud/SpringSakilaCrudApplication.class
+com/arcadia/samples/sakila/service/ICustomerService.class
+com/arcadia/samples/sakila/controller/CustomerController.class
+com/arcadia/samples/sakila/model/CustomerModel.class
+com/arcadia/samples/sakila/model/ICustomerModel.class
+com/arcadia/samples/sakila/App.class
+com/arcadia/samples/sakila/service/CustomerService.class

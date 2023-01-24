@@ -1,1 +1,6 @@
-/home/ganaranjo/Dropbox/code/github/spring-sakila-crud/src/main/java/com/arcadia/samples/springsakilacrud/SpringSakilaCrudApplication.java
+/home/ganaranjo/Dropbox/code/github/spring-sakila-crud/src/main/java/com/arcadia/samples/sakila/service/CustomerService.java
+/home/ganaranjo/Dropbox/code/github/spring-sakila-crud/src/main/java/com/arcadia/samples/sakila/model/ICustomerModel.java
+/home/ganaranjo/Dropbox/code/github/spring-sakila-crud/src/main/java/com/arcadia/samples/sakila/model/CustomerModel.java
+/home/ganaranjo/Dropbox/code/github/spring-sakila-crud/src/main/java/com/arcadia/samples/sakila/App.java
+/home/ganaranjo/Dropbox/code/github/spring-sakila-crud/src/main/java/com/arcadia/samples/sakila/service/ICustomerService.java
+/home/ganaranjo/Dropbox/code/github/spring-sakila-crud/src/main/java/com/arcadia/samples/sakila/controller/CustomerController.java

@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.arcadia.samples</groupId>
 	<artifactId>spring-sakila-crud</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>spring-sakila-crud</name>
 	<description>Demo Spring Boot project on sakila entity customer</description>
 	<properties>
