@@ -17,6 +17,22 @@ import jakarta.persistence.Table;
 @Table(name = "customer")
 public class CustomerModel {
     
+    public CustomerModel() {
+    }
+    
+    public CustomerModel(Byte storeId, String firstName, String lastName, 
+            String email, Short addressId, Byte active, Date createDate, 
+            Timestamp lastUpdate) {
+        this.storeId = storeId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.addressId = addressId;
+        this.active = active;
+        this.createDate = createDate;
+        this.lastUpdate = lastUpdate;
+    }
+
     @Id
     @Column(name = "customer_id")
     private Short customerId;
@@ -43,7 +59,7 @@ public class CustomerModel {
     private Date createDate;
     
     @Column(name = "last_update")
-    private Timestamp lastDate;
+    private Timestamp lastUpdate;
 
     public Short getCustomerId() {
         return customerId;
@@ -109,12 +125,12 @@ public class CustomerModel {
         this.createDate = createDate;
     }
 
-    public Timestamp getLastDate() {
-        return lastDate;
+    public Timestamp getLastUpdate() {
+        return lastUpdate;
     }
 
-    public void setLastDate(Timestamp lastDate) {
-        this.lastDate = lastDate;
+    public void setLastUpdate(Timestamp lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     @Override
@@ -127,9 +143,7 @@ public class CustomerModel {
                 + ", addressId=" + addressId 
                 + ", active=" + active 
                 + ", createDate=" + createDate 
-                + ", lastDate=" + lastDate 
+                + ", lastDate=" + lastUpdate 
                 + '}';
-    }
-    
-    
+    }    
 }

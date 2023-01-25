@@ -9,5 +9,5 @@ import java.util.List;
  */
 public interface ICustomerService {
 
-    public List<CustomerModel> listAllCustomers();
+    public List<CustomerModel> getAllCustomers();
 }

@@ -2,7 +2,9 @@ package com.arcadia.samples.sakila.service;
 
 import com.arcadia.samples.sakila.model.CustomerModel;
 import com.arcadia.samples.sakila.model.ICustomerModel;
+
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +20,7 @@ public class CustomerService implements ICustomerService{
     private ICustomerModel repository;
     
     @Override
-    public List<CustomerModel> listAllCustomers() {
+    public List<CustomerModel> getAllCustomers() {
         return repository.findAll();
     }
     
