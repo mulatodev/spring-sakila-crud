@@ -32,23 +32,51 @@
                         <form th:action="@{/customers}" th:object="${customer}" method="POST">
                             <div class="form-group">
                                 <label>Tienda: </label>
-                                <input type="text" name="storeId" th:field="*{storeId}" class="form-control">
+                                <input type="text" name="storeId" th:field="*{storeId}" class="form-control" required>
+                            </div>
+                            <br></br>
+                            <div>
                                 <label>Nombre: </label>
-                                <input type="text" name="firstName" th:field="*{firstName}" class="form-control" placeholder="Digite primer nombre">
+                                <input type="text" name="firstName" th:field="*{firstName}" class="form-control" placeholder="Digite primer nombre" required>
+                            </div>
+                            <br></br>
+                            <div>
                                 <label>Apellido: </label>
-                                <input type="text" name="lastName" th:field="*{lastName}" class="form-control" placeholder="Digite primer apellido">
+                                <input type="text" name="lastName" th:field="*{lastName}" class="form-control" placeholder="Digite primer apellido" required>
+                            </div>
+                            <br></br>
+                            <div>
                                 <label>Email: </label>
                                 <input type="text" name="email" th:field="*{email}" class="form-control" placeholder="Digite el correo">
+                            </div>
+                            <br></br>
+                            <div>
                                 <label>Dirección: </label>
-                                <input type="text" name="addressId" th:field="*{addressId}" class="form-control">
+                                <input type="text" name="addressId" th:field="*{addressId}" class="form-control" required>
+                            </div>
+                            <br></br>
+                            <div>
                                 <label>Activo?: </label>
-                                <input type="text" name="active" th:field="*{active}" class="form-control">
+                                <input type="text" name="active" th:field="*{active}" class="form-control" required>
+                            </div>
+                            <br></br>
+                            <div>
                                 <label>Creación: </label>
-                                <input type="text" name="createDate" th:field="*{createDate}" class="form-control">
+                                <input type="text" name="createDate" th:field="*{createDate}" class="form-control" required>
+                            </div>
+                            <br></br>
+                            <div>
                                 <label>Actualización: </label>
                                 <input type="text" name="lastUpdate" th:field="*{lastUpdate}" class="form-control">
-                           </div>
+                            </div>
+                            <br></br>
+                            <div class="box-footer">
+                                <button class="btn btn-success">
+                                    Guardar
+                                </button>
+                            </div>
                         </form>
+                        <br></br>
                     </div>
                 </div>
             </div>

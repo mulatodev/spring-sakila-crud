@@ -10,4 +10,6 @@ import java.util.List;
 public interface ICustomerService {
 
     public List<CustomerModel> getAllCustomers();
+    
+    public CustomerModel saveCustomer(CustomerModel customerModel);
 }

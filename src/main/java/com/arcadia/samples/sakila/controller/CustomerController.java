@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
 
 import com.arcadia.samples.sakila.service.ICustomerService;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 /**
  *
@@ -26,10 +28,17 @@ public class CustomerController {
     }
     
     @GetMapping("/customers/new")
-    public String createCustomer(Model model){
+    public String showCustomerEntryForm(Model model){
         CustomerModel customerModel = new CustomerModel();
         
         model.addAttribute("customer", customerModel);
         return "customers_add";
+    }
+    
+    @PostMapping("/customers")
+    public String saveCustomer(@ModelAttribute("customer") CustomerModel customerModel){
+        
+        service.saveCustomer(customerModel);
+        return "redirect:customers";
     }
 }

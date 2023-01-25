@@ -6,6 +6,8 @@ import java.sql.Timestamp;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
 
 /**
@@ -34,6 +36,7 @@ public class CustomerModel {
     }
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
     private Short customerId;
     
@@ -122,6 +125,9 @@ public class CustomerModel {
     }
 
     public void setCreateDate(Date createDate) {
+        
+        // convert createDate al formato adecuado
+        System.out.println(createDate.toString());
         this.createDate = createDate;
     }
 
