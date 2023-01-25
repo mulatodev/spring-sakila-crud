@@ -1,5 +1,6 @@
 package com.arcadia.samples.sakila.controller;
 
+import com.arcadia.samples.sakila.model.CustomerModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,5 +23,13 @@ public class CustomerController {
     public String listCustomers(Model model){
         model.addAttribute("customers", service.getAllCustomers());
         return "customers";  
+    }
+    
+    @GetMapping("/customers/new")
+    public String createCustomer(Model model){
+        CustomerModel customerModel = new CustomerModel();
+        
+        model.addAttribute("customer", customerModel);
+        return "customers_add";
     }
 }
