@@ -70,6 +70,6 @@ public class CustomerController {
     @GetMapping("/customers/{id}")
     public String deleteCustomer(@PathVariable Short id){
         service.deleteCustomer(id);
-        return "redirect:customers";
+        return "redirect:/customers";
     }
 }

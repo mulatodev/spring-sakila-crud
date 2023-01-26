@@ -125,9 +125,6 @@ public class CustomerModel {
     }
 
     public void setCreateDate(Date createDate) {
-        
-        // convert createDate al formato adecuado
-        System.out.println(createDate.toString());
         this.createDate = createDate;
     }
 
