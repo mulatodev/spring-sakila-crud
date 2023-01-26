@@ -28,5 +28,19 @@ public class CustomerService implements ICustomerService{
     public CustomerModel saveCustomer(CustomerModel customerModel) {
         return repository.save(customerModel);
     }
-    
+
+    @Override
+    public CustomerModel getCustomerById(Short id) {
+        return repository.findById(id).get();
+    }
+
+    @Override
+    public CustomerModel updateCustomer(CustomerModel customerModel) {
+        return repository.save(customerModel);
+    }
+
+    @Override
+    public void deleteCustomer(Short id) {
+        repository.deleteById(id);
+    }
 }

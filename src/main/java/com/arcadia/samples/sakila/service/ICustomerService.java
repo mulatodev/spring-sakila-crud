@@ -12,4 +12,10 @@ public interface ICustomerService {
     public List<CustomerModel> getAllCustomers();
     
     public CustomerModel saveCustomer(CustomerModel customerModel);
+    
+    public CustomerModel getCustomerById(Short id);
+    
+    public CustomerModel updateCustomer(CustomerModel customerModel);
+    
+    public void deleteCustomer(Short id);
 }
